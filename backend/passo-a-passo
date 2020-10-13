@@ -1,0 +1,9 @@
+passos para trabalhar com typescript e nodejs
+
+yarn add @types/express -D
+yarn add typescript -D
+yarn tsc --init
+
+ir até o tsconfig e alterar a versão do ecma para 2017
+
+ir no packge json criar um sript personalizado
