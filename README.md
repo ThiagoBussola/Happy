@@ -1,4 +1,4 @@
-<h1>Terceiro Dia </h1>
+<h1>Segundo Dia </h1>
 <h3>Passos para trabalhar com typescript e nodejs</h3>
 
 yarn add @types/express -D
