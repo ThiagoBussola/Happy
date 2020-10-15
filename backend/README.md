@@ -14,45 +14,50 @@ yarn add ts-node-dev -D
 
 <p>Nesse caso foi utilizado o sqlite3, mas nada nos impede de trocar para mariaDB ou MySQL</p>
 
-yarn add sqlite3
-yarn add typeorm
-yarn add multer
-yarn add @types/multer -D
-yarn add express-async-errors
-yarn add yup
-yarn add @types/yup -D
-yarn add cors
-yarn add @types/cors -D
+<p>yarn add sqlite3</p>
+<p>yarn add typeorm</p>
+<p>yarn add multer</p>
+<p>yarn add @types/multer -D </p>
+<p>yarn add express-async-errors </p>
+<p>yarn add yup </p>
+<p>yarn add @types/yup -D </p>
+<p>yarn add cors </p>
+<p>yarn add @types/cors -D </p>
 
-Ir até o tsconfig e alterar a versão do ecma para 2017
+<h4>Ir até o tsconfig e alterar a versão do ecma para 2017</h4>
 
-e também deixar a seguinte config no arquivo:
+<h5>também deixar a seguinte config no arquivo: </h5>
 
-"skipLibCheck": true,  
-"forceConsistentCasingInFileNames": true
+<p>"skipLibCheck": true,  </p>
+<p>"forceConsistentCasingInFileNames": true </p>
 
-ir no packge.json criar um sript personalizado
+<h3>Ir no packge.json criar um sript personalizado</h3>
 
-"scripts": {
+<code> "scripts": {
 "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
 },
 "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
 
-Para iniciar o projeto:
+</code>
 
-yarn dev
+<h2>Para inicar o projeto:</h2>
 
-para um bom ambiente de desenvolvimento foram recomendadas as ferramentas beekeeper e insomnia.
+<p>yarn dev</p>
 
-yarn typeorm migration:create -n create_orphanages
+<p>para um bom ambiente de desenvolvimento foram recomendadas as ferramentas beekeeper e insomnia.</p>
 
-yarn typeorm migration:run
+<h4>comandos relacionados a migrations utilizados nas aulas </h4>
 
-yarn typeorm migration:revert
+<p>yarn typeorm migration:create -n create_orphanages </p>
 
-yarn typeorm migration:create -n create_images
+<p>yarn typeorm migration:run </p>
 
-yarn typeorm migration:run
+<p>yarn typeorm migration:revert </p>
 
-Comandos uteis: yarn typeorm migration:revert
-volta o ultimo comando de migration, util para dropar a tabela caso precise de alterações
+<p>yarn typeorm migration:create -n create_images </p>
+
+<p>yarn typeorm migration:run </p>
+
+<strong>Comandos uteis: yarn typeorm migration:revert<strong>
+
+<p>volta o ultimo comando de migration, util para dropar a tabela caso precise de alterações</p>
